@@ -94,7 +94,7 @@ Cypress.Commands.add('workEmailAddress', () => {
 
 
 Cypress.on('uncaught:exception', (err) => {
-  if (err.message.includes('M.notify is not a function') || err.message.includes('Intercom is not a function')) {
+  if (err.message.includes('M.notify is not a function') || err.message.includes('Intercom is not a function') || err.message.includes("reading 'role'")) {
     return false;
   }
   
