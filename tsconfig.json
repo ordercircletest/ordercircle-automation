@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    // "paths": {"*":["types/*"]},
+    // "paths": {"$lib/*": ["src/lib/*"]},
+    "target": "ES2017",
+    "module": "CommonJS",
+    "types": ["node", "cypress"],
+    
+    "lib": ["dom", "ES2021"],
+    
+  },
+  "include": ["**/*.ts", "cypress/e2e/data/inputs.js", "cypress/e2e/data/inputs.js", "cypress/support/commands.ts", "cypress/support/e2e.js"]
+}
