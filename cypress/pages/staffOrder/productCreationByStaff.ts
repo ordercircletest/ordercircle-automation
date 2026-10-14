@@ -74,8 +74,8 @@ export class productCreationByStaffDashborad {
             .and("be.visible").click().clear()
             .type(data.productMaximunPurchase)
 
-            this.elements.productMSRP().should('have.class','form-control')
-            .and("be.visible").click().clear()
+            this.elements.productMSRP().filter(':visible').first()
+            .click().clear()
             .type(data.productMsrp)
 
             this.elements.TrackInventoryOfProduct().click({force: true})
